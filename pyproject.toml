@@ -9,9 +9,12 @@ readme = "README.md"
 python = "^3.12"
 moviepy = "^1.0.3"
 numpy = "2.0.2"
-webrtcvad = "^2.0.10"
 ffmpeg-python = "^0.2.0"
 
+# windows or not
+webrtcvad = "^2.0.10"
+webrtcvad = { version = "^2.0.10", markers = "sys_platform != 'win32'" }
+webrtcvad-wheels = { version = "^2.0.10", markers = "sys_platform == 'win32'" }
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
