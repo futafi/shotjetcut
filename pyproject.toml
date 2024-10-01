@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "shotjetcut"
+version = "1.0.0"
+description = ""
+authors = ["futafi <D.futagi@vivaldi.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+moviepy = "^1.0.3"
+numpy = "2.0.2"
+webrtcvad = "^2.0.10"
+ffmpeg-python = "^0.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+shotjetcut = "shotjetcut.main:main"

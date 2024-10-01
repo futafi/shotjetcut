@@ -1,0 +1,7 @@
+*.mkv
+*.mlt
+*.wav
+*.ipynb
+.venv
+__pycache__
+memo.py
