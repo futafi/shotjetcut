@@ -6,7 +6,7 @@ authors = ["futafi <D.futagi@vivaldi.net>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.11"
 moviepy = "^1.0.3"
 numpy = "2.0.2"
 ffmpeg-python = "^0.2.0"
