@@ -132,7 +132,7 @@ def shotcut_write_mlt(output: str, tl: timeline.Video, audio_tracks: list, **kwa
             length = global_out  # TODO really?
 
             if clip.speed == 1:
-                resource = f"{src.path}"
+                resource = f"./{src.path.name}"
                 caption = f"{src.path.stem}"
                 chain = ET.SubElement(
                     mlt, "chain", attrib={"id": f"chain{chains}", "out": length}
@@ -141,7 +141,7 @@ def shotcut_write_mlt(output: str, tl: timeline.Video, audio_tracks: list, **kwa
                 chain = ET.SubElement(
                     mlt, "producer", attrib={"id": f"producer{producers}", "out": length}
                 )
-                resource = f"{clip.speed}:{src.path}"
+                resource = f"{clip.speed}:./{src.path.name}"
                 caption = f"{src.path.stem} ({clip.speed}x)"
 
                 # producers += 1
