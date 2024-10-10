@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "shotjetcut"
-version = "1.0.0"
+version = "1.1.0"
 description = ""
 authors = ["futafi <D.futagi@vivaldi.net>"]
 readme = "README.md"
