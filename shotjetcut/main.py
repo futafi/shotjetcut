@@ -25,7 +25,7 @@ def main():
         sys.exit(1)
     
     if args.output is None:
-        args.output = args.input.split(".")[0] + ".mlt"
+        args.output = f"{args.input}.mlt"
 
     a_tracks = []
     for a in args.audio_tracks:
